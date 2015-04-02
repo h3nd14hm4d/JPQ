@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!-- we're using scroll view to see all contents -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- EditText for plain text input -->
+
+            <TextView
+                android:id="@+id/textViewPlainTextInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="EditText For Plain Text Input" />
+
+            <EditText
+                android:id="@+id/editTextPlainTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPlainTextInput"
+                android:singleLine="true" >
+            </EditText>
+
+            <!-- EditText for password input -->
+
+            <TextView
+                android:id="@+id/textViewPasswordInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextPlainTextInput"
+                android:text="EditText For Password Input" />
+
+            <EditText
+                android:id="@+id/editTextPasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPasswordInput"
+                android:inputType="textPassword" >
+            </EditText>
+
+            <!-- EditText for email address input -->
+
+            <TextView
+                android:id="@+id/textViewEmailAddressInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextPasswordInput"
+                android:text="EditText For Email Address Input" />
+
+            <EditText
+                android:id="@+id/editTextEmailAddressInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewEmailAddressInput"
+                android:inputType="textEmailAddress" />
+
+            <!-- EditText for phone number input -->
+
+            <TextView
+                android:id="@+id/textViewPhoneNumberInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextEmailAddressInput"
+                android:text="EditText For Phone Number Input" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNumberInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPhoneNumberInput"
+                android:inputType="phone" />
+
+            <!-- EditText for number input -->
+
+            <TextView
+                android:id="@+id/textViewNumberInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextPhoneNumberInput"
+                android:text="EditText For Number Input" />
+
+            <EditText
+                android:id="@+id/editTextNumberInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewNumberInput"
+                android:inputType="number" />
+
+            <!-- EditText for signed number input -->
+
+            <TextView
+                android:id="@+id/textViewSignedNumberInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextNumberInput"
+                android:text="EditText For Signed Number Input" />
+
+            <EditText
+                android:id="@+id/editTextSignedNumberInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewSignedNumberInput"
+                android:inputType="numberSigned" />
+
+            <!-- EditText for decimal number input -->
+
+            <TextView
+                android:id="@+id/textViewDecimalNumberInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextSignedNumberInput"
+                android:text="EditText For Decimal Number Input" />
+
+            <EditText
+                android:id="@+id/editTextDecimalNumberInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewDecimalNumberInput"
+                android:inputType="numberDecimal" />
+
+            <!-- Some options with EditText -->
+
+            <!-- Button to clear plain text input -->
+            <com.cengalabs.flatui.views.FlatButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/ClearPlainTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/editTextDecimalNumberInput"
+                android:text="Clear Plain Text Input" />
+
+            <!-- Button to assign number input to plain text input -->
+            <com.cengalabs.flatui.views.FlatButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/AssignToPlainTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ClearPlainTextInput"
+                android:layout_below="@+id/ClearPlainTextInput"
+                android:text="Assign Number Input to Plain Text Input" />
+
+            <!-- Button to show plain text input -->
+            <com.cengalabs.flatui.views.FlatButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/ShowPlainTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/AssignToPlainTextInput"
+                android:layout_below="@+id/AssignToPlainTextInput"
+                android:text="Show Plain Text Input" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
